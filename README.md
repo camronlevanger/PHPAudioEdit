@@ -40,4 +40,23 @@ should point to `extension=/usr/lib64/php5.3/lib/extensions/no-debug-non-zts-200
 
 ####Restart Apache
 
-`/etc/init.d/apache2
+`/etc/init.d/apache2`
+
+####Make sure ffmpeg-php extensions are loaded and working
+
+Run `php -i | grep ffmpeg'
+
+You should see something like this in the output:
+
+>Additional .ini files parsed => /etc/php/cli-php5.3/ext-active/ffmpeg.ini,
+>ffmpeg
+>ffmpeg-php version => 0.6.0-svn
+>ffmpeg-php built on => Feb 11 2014 15:36:24
+>ffmpeg-php gd support  => enabled
+>ffmpeg libavcodec version => Lavc53.61.100
+>ffmpeg libavformat version => Lavf53.32.100
+>ffmpeg swscaler version => SwS2.1.100
+>ffmpeg.allow_persistent => 0 => 0
+>ffmpeg.show_warnings => 0 => 0
+
+If you get errors, correct them until extensions load properly.
