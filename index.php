@@ -8,6 +8,7 @@
 ?>
 
 <p><h1>Audio Clipper Prototype 1</h1></p>
+<p>Clips the first 6 seconds from your uploaded file. Filename cannot contain spaces.</p>
 <p><h3>Upload an mp3 file:</h3></p>
 <br/>
 
